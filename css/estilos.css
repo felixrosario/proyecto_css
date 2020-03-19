@@ -1,0 +1,397 @@
+@import "./variables.css";
+
+@keyframes playa1 {
+  from{-ms-transform: scale();
+       -moz-transform: scale();
+       -o-transform: scale();
+       -webkit-transform: scale();
+       transform: scale();
+       filter: grayscale();}
+  to{-ms-transform: scale(1.2);
+     -moz-transform: scale(1.2);
+     -o-transform: scale(1.2);
+     -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+      filter: grayscale(70%);}
+}
+
+@keyframes playa2 {
+  from{-ms-transform: scale();
+       -moz-transform: scale();
+       -o-transform: scale();
+       -webkit-transform: scale();
+       transform: scale();
+       filter: blur();}
+  to{-ms-transform: scale(1.2);
+     -moz-transform: scale(1.2);
+     -o-transform: scale(1.2);
+     -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+      filter: blur(5px);}
+}
+
+@keyframes parque1 {
+  from{-ms-transform: scale();
+       -moz-transform: scale();
+       -o-transform: scale();
+       -webkit-transform: scale();
+       transform: scale();
+       filter:hue-rotate();}
+  to{-ms-transform: scale(1.2);
+     -moz-transform: scale(1.2);
+     -o-transform: scale(1.2);
+     -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+     filter:hue-rotate(90deg);}
+}
+
+@keyframes parque2 {
+  from{-ms-transform: scale();
+       -moz-transform: scale();
+       -o-transform: scale();
+       -webkit-transform: scale();
+       transform: scale();
+       filter:brightness();}
+  to{-ms-transform: scale(1.2);
+     -moz-transform: scale(1.2);
+     -o-transform: scale(1.2);
+     -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+     filter:brightness(200%);}
+}
+
+@keyframes rio1 {
+  from{-ms-transform: scale();
+       -moz-transform: scale();
+       -o-transform: scale();
+       -webkit-transform: scale();
+       transform: scale();
+       filter:invert();}
+  to{-ms-transform: scale(1.2);
+     -moz-transform: scale(1.2);
+     -o-transform: scale(1.2);
+     -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+      filter:invert(100%);}
+}
+
+@keyframes rio2 {
+  from{-ms-transform: scale();
+       -moz-transform: scale();
+       -o-transform: scale();
+       -webkit-transform: scale();
+       transform: scale();
+       filter:sepia();}
+  to{-ms-transform: scale(1.2);
+     -moz-transform: scale(1.2);
+     -o-transform: scale(1.2);
+     -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+      filter:sepia(100%);}
+}
+
+body{
+  margin: auto;
+}
+
+header{
+  background-color: var(--azul);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+h1, h2, h3{
+  text-align: center;
+  font-family: 'Dancing Script';
+}
+
+ul li{
+    display: inline;
+}
+
+ul:last-child{
+  margin-right: 10vw;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+  color: var(--negro);
+}
+
+a:hover{
+  text-decoration: underline;
+  color: var(--azul_fuerte);
+}
+
+p, a, address, button, .tel{
+  text-align: center;
+  font-family: 'Roboto';
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+.principal{
+  background-image: url(../images/inicial.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.principal .contenido{
+  background-color: var(--gris);
+  margin-bottom: 10vh;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  border-radius: 13px;
+}
+
+.descripcion h2{
+  font-size: 3em;
+}
+
+.imagen-principal{
+  display: none;
+}
+
+#playa{
+ background-color: var(--rojo);
+}
+
+#parque{
+  background-color: var(--verde);
+}
+
+#rio{
+  background-color: var(--azulado);
+}
+
+.imagen-secundaria{
+  padding: 20px;
+}
+
+.imagen-secundaria  img{
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+  border-radius: 20px;
+}
+
+.contacto{
+  border-radius: 15px;
+  border-color: var(--verde_fuerte);
+  border-style: groove;
+  background-color: var(--verde);
+  margin-left: 10vw;
+  margin-right: 10vw;
+
+}
+
+label{
+  display: block;
+}
+
+button{
+  border-radius: 5px;
+  border-color: inherit;
+  background-color: var(--verde_fuerte);
+}
+
+/*para tablets*/
+@media (min-width:768px) {
+
+   header{
+     flex-direction: row;
+     padding-left: 25vw;
+   }
+
+   nav{
+    padding-top: 2vh;
+   }
+
+   main .principal .contenido p{
+     font-size: 1.3em;
+     font-weight: bold;
+   }
+
+   .principal .contenido{
+     margin-bottom: 30vh;
+   }
+
+   .descripcion h2{
+     font-size: 3em;
+   }
+
+   .lugar .contenido{
+     display: flex;
+   }
+
+   #parque .contenido .descripcion{
+     padding-left: 5vw;
+   }
+
+   #rio .contenido .descripcion{
+     padding-left: 7vw;
+   }
+
+   #parque .contenido .imagen-secundaria img{
+     width: 65%;
+     margin-left: 14vw;
+   }
+
+   #rio .contenido .imagen-secundaria img{
+     width: 63%;
+     margin-left: 16vw;
+   }
+
+   footer{
+     display: flex;
+   }
+
+   .informacion{
+     margin: 0 auto;
+   }
+
+   .contacto{
+    margin: 0 auto;
+    padding-left: 5vw;
+    padding-right: 5vw;
+   }
+
+   .contacto p{
+     display: flex;
+     flex-direction: column;
+   }
+
+   .contacto form p:last-child{
+     display: block;
+   }
+}
+
+/*para escritorio*/
+@media (min-width:1024px) {
+
+    header{
+    padding-left: 1vw;
+    }
+
+    nav{
+     padding-top: 2.5vh;
+    }
+
+    .principal .contenido{
+      margin-top: 5vh;
+      margin-bottom: 50vh;
+    }
+
+    .descripcion h2{
+      font-size: 4em;
+    }
+
+    .imagen-principal{
+      display: block;
+      padding-top: 3vh;
+      padding-bottom: 2vh;
+      padding-left: 5vw;
+    }
+
+    .imagen-principal img{
+      width: 60%;
+      border-radius: 20px;
+    }
+
+    #parque .contenido .imagen-principal img{
+      width: 65%;
+    }
+
+    #rio .contenido .imagen-principal img{
+      width: 67%;
+    }
+
+    .imagen-secundaria img{
+      width: 50%;
+    }
+
+    #playa .contenido .imagen-secundaria{
+      padding-left: 5vw;
+    }
+
+    #playa .contenido .imagen-secundaria img{
+      width: 61%;
+    }
+
+    #parque .contenido .imagen-secundaria img{
+      width: 50%;
+    }
+
+    #rio .contenido .imagen-secundaria{
+      padding-right: 3vw;
+    }
+
+    #rio .contenido .imagen-secundaria img{
+      width: 50%;
+    }
+
+    #playa .contenido .imagen-principal img:hover{
+      animation-name: playa1;
+      animation-duration: 2s;
+    }
+
+    #playa .contenido .imagen-secundaria img:hover{
+      animation-name: playa2;
+      animation-duration: 2s;
+    }
+
+    #parque .contenido .imagen-principal img:hover{
+      animation-name: parque1;
+      animation-duration: 2s;
+    }
+
+    #parque .contenido .imagen-secundaria img:hover{
+      animation-name: parque2;
+      animation-duration: 2s;
+    }
+
+    #rio .contenido .imagen-principal img:hover{
+      animation-name: rio1;
+      animation-duration: 2s;
+    }
+
+    #rio .contenido .imagen-secundaria img:hover{
+      animation-name: rio2;
+      animation-duration: 2s;
+    }
+
+    .informacion h3, .informacion address, .tel, .contacto h3, label{
+      text-align: left;
+    }
+
+    .informacion{
+      margin: 0;
+    }
+
+    .contacto{
+      margin-left: 38vw;
+      padding-left: 1vw;
+      padding-right: 1vw;
+      padding-bottom: 1vh;
+    }
+
+    .contacto p,{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contacto form p input{
+      padding-right: 35vw;
+    }
+
+    .contacto form p:last-child{
+      display: inline;
+    }
+}

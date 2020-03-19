@@ -1,0 +1,10 @@
+:root{
+  --azul:rgb(45, 205, 238);
+  --gris:rgba(212, 226, 229, 0.4);
+  --rojo:rgb(249, 205, 205);
+  --verde:rgb(178, 250, 207);
+  --verde_fuerte:rgb(58, 249, 164);
+  --azulado:rgb(185, 178, 250);
+  --azul_fuerte:rgb(38, 18, 219);
+  --negro:rgb(0, 0, 0);
+}
